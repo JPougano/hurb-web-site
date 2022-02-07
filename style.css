@@ -1,0 +1,254 @@
+:root{
+    --color-white: #fff;
+    --color-black: #1E1E1E;
+    --color-light-blue: #E2EAFF;
+    --color-soft-blue: #3468FC;
+    --color-light-grey: #CCCCCC;
+    --font-family: 'Montserrat', sans-serif;;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+    --line-height: 1.4;
+    --border-radius: 4px;
+    --border-radius-large: 8px;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+/* CSS do menu do Header */
+
+header{
+    background-color: #022A97;
+    width: 100vw;
+    height: 550px;
+    padding: 0 4em;
+    box-sizing: border-box;
+}
+
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav__link{
+    margin-right: 1em;
+    color: var(--color-white);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.navbar__left .nav__link:hover{
+    color: #CCCCCC;
+}
+
+.fale-conosco{
+    margin: 1em 1em 0 0;
+    padding: .5em;
+    border: 1px solid var(--color-white);
+    border-radius: 5px;
+}
+
+.icon-br{
+    width: 25px;
+    margin-top: .4em;
+}
+
+.logo-hurb{
+    width: 80px;
+}
+
+.header__title{
+    width: 50%;
+    font-size: 60px;
+    color: var(--color-white);
+    margin-top: 1.5em;
+    font-weight: 400;
+}
+
+/* CSS do menu de busca */
+
+.search{
+    position: relative;
+    top: -70px;
+    margin: 0 4em;
+    padding: 1em;
+    background-color: var(--color-white);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+.search__product-nav{
+    width: 50%;
+    padding: 1em 2em;
+}
+
+.search__list{
+    display: flex;
+    list-style: none;
+}
+
+.search__list__item{
+    font-size: 1.5em;  
+    margin-right: 2em;
+}
+
+.search__list_link{
+    text-decoration: none;  
+    color: var(--color-black);
+}
+
+.search__input-nav{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border: 1px solid var(--color-light-grey);
+    border-radius: 4px;
+    margin: 1em 0;
+    height: 70px;
+    align-items: center;
+    color: var(--color-light-grey);
+}
+
+.search__text-input{
+    height: 70px;
+    margin-left: 1em;
+    border: none;
+    grid-column: span 2;
+    border-right: 1px solid var(--color-light-grey);
+    font-size: 1em;
+    outline: none;
+}
+
+.search__date{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    border-right: 1px solid var(--color-light-grey);
+}
+
+.search__calendar{
+    margin-right: 3em;
+    font-size: 1em;
+}
+
+.search__calendar::before{
+    content:"📅";
+}
+
+.search__qtd-people{
+    text-align: center;
+}
+
+.search__button{
+    height: 100%;
+    background-color: var(--color-soft-blue);
+    border: none;
+    font-size: 1.3em;
+    color:var(--color-white);
+}
+
+/* CSS da seção de benefícios HURB */
+
+.benefits{
+    display: flex;
+    margin: 0 4em;
+
+}
+
+.benefits__icon{
+    width: 80px;
+    margin: 0 1em 1em 1em;
+}
+
+.benefits__item{
+    display: flex;
+    align-items: center;
+}
+
+.benefits__title{
+    font-weight: 700;
+}
+
+/* CSS da seção de melhores preços */
+
+.best-prices__title{
+    margin: 70px 0 1em 0;
+    padding: 0 2.5em;
+}
+
+.best-prices__container{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4em;
+    box-sizing: border-box;
+}
+
+.best-prices_image{
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* CSS da seção de pacotes em destaque */
+
+.highlight__title{
+    margin: 70px 0 1em 0;
+    padding: 0 2.5em;
+}
+
+.highlight__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin: 0 4em;
+
+}
+
+.highlight__card{
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+.highlight__card-image{
+    max-width: 300px;
+}
+
+.highlight__card-title{
+    font-weight: 600;
+}
+
+.highlight__card-diarias::before{
+    content:"📅";
+}
+
+.highlight__card-diarias{
+    font-size: 14px;
+    margin: .5em 0;
+}
+
+.highlight__card-item::before{
+    content: "✔️";
+}
+
+.highlight__card-room{
+    margin-top: 1.5em;
+}
+.highlight__card-flight{
+    margin-bottom: 1.5em;
+}
+
+.highlight__card-list{
+    list-style: none;
+}
