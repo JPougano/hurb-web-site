@@ -22,6 +22,10 @@
     font-family: var(--font-family);
 }
 
+.global-card__link{
+    text-decoration: none;
+}
+
 /* CSS do menu do Header */
 
 header{
@@ -192,7 +196,7 @@ header{
 .best-prices__container{
     display: flex;
     justify-content: space-between;
-    margin: 0 4em;
+    margin: 0 4em 4em 4em;
     box-sizing: border-box;
 }
 
@@ -205,103 +209,126 @@ header{
 /* CSS da seção de pacotes em destaque */
 
 .highlight__title{
-    margin: 70px 0 1em 0;
+    margin: 1em 0;
     padding: 0 2.5em;
 }
 
-.highlight__container{
+.selling-card__container{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     justify-content: space-between;
     box-sizing: border-box;
-    margin: 0 4em;
+    margin: 0 4em 4em 4em;
     column-gap: 1em;
 
 }
 
-.highlight__card{
+.selling-card__card{
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.1);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4em;
 }
 
-.highlight__targets{
+.selling-card__targets{
     position: absolute;
     width: 305px;
     display: flex;
     justify-content: space-between;
 }
 
-.highlight__descount{
+.selling-card__descount{
     width:3vw;
     height: 6vh;
     background-color: var(--color-orange);
 }
 
-.highlight__plane{
+.selling-card__plane{
     width: 3vw;
     height: 6vh;
     background-color: var(--color-soft-blue);
 }
 
-.highlight__card-image{
+.selling-card__image{
     width: 100%;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    margin-bottom: 1em;
 
 }
 
-.highlight__card-content{
+.selling-card__content{
     padding: 0 .8em;
+    display: flex;
+    flex-direction: column;
 }
 
-.highlight__card-title{
+.selling-card__location{
+    font-size: 12px;
+    margin-bottom: 1em;
+}
+
+.selling-card__title{
     font-weight: 600;
+    color: var(--color-black);
+    margin-bottom: .5em;
+    min-height: 38px
 }
 
-.highlight__card-diarias::before{
+.selling-card__diarias::before{
     content:"📅";
+    margin-right: .5em;
 }
 
-.highlight__card-diarias{
+.selling-card__diarias{
     font-size: 14px;
     margin: .5em 0;
 }
 
-.highlight__card-item::before{
+.selling-card__item::before{
     content: "✔️";
 }
 
-.highlight__card-item{
+.selling-card__item{
     font-size: 12px;
 }
 
-.highlight__card-room{
-    margin-top: 1.5em;
-}
-.highlight__card-flight{
-    margin-bottom: 1.5em;
+.selling-card__hidden{
+    display: none;
 }
 
-.highlight__card-list{
+.selling-card__list{
     list-style: none;
+    margin: 1em 0;
+    min-height: 80px;
 }
 
-.highlight__card-oldprice{
+.selling-card__list-price{
+    list-style: none;
+    margin: 1.5em 0;
+    justify-self: flex-end;
+}
+
+
+.selling-card__oldprice{
     text-decoration: line-through;
 }
 
-.highlight__card-list-item{
+.selling-card__list-item-details{
+    margin: .5em 0;
+}
+.selling-card__list-item{
     font-size: 10px;
 }
 
-.highlight__price{
+.selling-card__price{
     color: var(--color-orange);
     font-size: 20px;
     font-weight: 600;
 }
 
-.highlight__cancel{
+.selling-card__cancel{
     color: var(--color-green);
 }
